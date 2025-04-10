@@ -1,11 +1,20 @@
-
-# 📚 SQL Employee Pagination & Search Demo
+# SQL Employee Pagination & Search Demo
 
 This SQL script demonstrates a basic Employee table setup used for implementing features like **pagination**, **search**, and **filtering** in web applications. The data inserted is purely for testing purposes.
 
----
+## Database Creation and Setup
 
-## ✅ Create Employee Table
+```sql
+-- Create the database
+CREATE DATABASE Practical13;
+GO
+
+-- Use the database
+USE Practical13;
+GO
+```
+
+## Create Employee Table
 
 ```sql
 CREATE TABLE Employee (
@@ -16,9 +25,7 @@ CREATE TABLE Employee (
 );
 ```
 
----
-
-## 📥 Insert Dummy Records for Testing
+## Insert Dummy Records for Testing
 
 ```sql
 INSERT INTO Employee (Name, DOB, Age) VALUES
@@ -49,13 +56,9 @@ INSERT INTO Employee (Name, DOB, Age) VALUES
 ('Isha', '1993-10-16', 31);
 ```
 
----
-
-## 💡 Purpose
+## Purpose
 
 This data can be used for testing:
 - Pagination logic (limit-offset or page-size)
 - Search functionality by name or age
 - Sorting and filtering
-
----
